@@ -9,47 +9,32 @@ iterm2
 ## Boxes
 # Virtualization
 vagrant
+vagrant-manager
 virtualbox
 # Containers
 boot2docker
 
 ## Coding
-# SourceTree
-sourcetree
 # Text editing
 sublime-text3
 atom
 # Markdown
 macdown
+# Database
+sequel-pro
+# Documentation
+dash
 
 ## Desktop
-# Proper screen ligthing
-flux
 # QuickLook plugins
 qlcolorcode qlstephen qlmarkdown quicklook-json betterzipql suspicious-package
 # Window management
 spectacle
-# Logitech Unifying software for keyboard and trackball
-logitech-unifying
+rightzoom
 
 ## Media
 # Video player
 vlc
-# PDF reader
-skim
-# Picture viewer
-xee22
-# Comic reader
-simple-comic
-# Sonos music manager
-sonos
-# Soundcloud client (yes, that's the correct spelling)
-soundcleod
-# Adobe Flash
-flash
-# Podcast player
-instacast
-# Music player - install vox from App Store instead
 # Spotify player
 spotify
 
@@ -58,18 +43,9 @@ spotify
 # Screen recording
 screenflow
 # Note taking
-evernote
 nvalt
-# VMware View
-vmware-horizon-view-client
 # Collaboration
 slack
-# Podcast cleanup
-levelator
-
-## Social
-# Skype
-skype
 
 ## Storage
 # Online storage
@@ -78,6 +54,3 @@ google-drive
 # Compression
 keka
 
-## Games
-# Steam client - now possible to stream games from the gaming rig to the Mac!
-steam

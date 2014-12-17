@@ -2,7 +2,7 @@
 # Most of this is from https://github.com/paulmillr/dotfiles/blob/master/symlink-dotfiles.sh
 
 dev="$HOME/Developer"
-dotfiles="$dev/virtualswede/osx-bootstrap/dotfiles"
+dotfiles="$dev/osx-bootstrap/dotfiles"
 
 if [[ -d "$dotfiles" ]]; then
   echo "Symlinking dotfiles from $dotfiles"
@@ -19,7 +19,7 @@ link() {
   ln -s "$from" "$to"
 }
 
-for location in $dotfiles/.{zshrc,tmux.conf} ; do
+for location in $dotfiles/.{zshrc} ; do
   file="${location##*/}"
   file="${file%.sh}"
   link "$location" "$HOME/$file"

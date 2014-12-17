@@ -6,16 +6,13 @@
 # General
 # =======
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "earth"
-sudo scutil --set HostName "earth"
-sudo scutil --set LocalHostName "earth"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "earth"
+sudo scutil --set ComputerName "foxmacpro"
+sudo scutil --set HostName "foxmacpro"
+sudo scutil --set LocalHostName "foxmacpro"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "foxmacpro"
 
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
-
-# Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 #Enabling full keyboard access for all controls (e.g. enable Tab in modal dialogs
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
@@ -27,15 +24,6 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Save screenshots to the downlaods.
 defaults write com.apple.screencapture location "$HOME/Downloads/"
 
-# Bottom right screen corner → Start screen saver
-defaults write com.apple.dock wvous-br-corner -int 5
-defaults write com.apple.dock wvous-br-modifier -int 0
-
-# Sound
-# =====
-#Disable the Startup Chime
-sudo nvram SystemAudioVolume=" "
-
 
 # Trackpad
 # ========
@@ -45,9 +33,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 sudo defaults write com.apple.AppleMultitouchTrackpad Clicking 1
-
-#Secondary click
-defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true
 
 
 # Finder
@@ -84,5 +69,37 @@ chflags nohidden ~/Library
 # Remove duplicates in the “Open With” menu (also see `lscleanup` alias)
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
 
+#Enable repeat on keydown
+defaults write -g ApplePressAndHoldEnabled -bool false
 
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Finder: allow text selection in Quick Look
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+#Show indicator lights for open applications in the Dock
+defaults write com.apple.dock show-process-indicators -bool true
+
+#Enable AirDrop over Ethernet and on unsupported Macs running Lion
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
+
+#Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 0.02
+
+#Set a shorter Delay until key repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
+
+#Disable the 'Are you sure you want to open this application?' dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+#Expand save panel by default
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+
+#Sort Activity Monitor results by CPU usage
+defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
+defaults write com.apple.ActivityMonitor SortDirection -int 0
 

@@ -9,16 +9,5 @@ tmux
 nvm
 python
 
-## VPN stuff
-#tuntap
-#openconnect
-
 ## brew cask and more versions of casks
 caskroom/cask/brew-cask
-
-## Pivotal CF cli
-cloudfoundry-cli
-
-## Time-waste stuff
-fortune
-cowsay

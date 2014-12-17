@@ -20,5 +20,3 @@ brew cask install $(cat Caskfile|grep -v "#")
 source 'settings.sh'
 source 'symlink-dotfiles.sh'
 
-# Update OS X
-sudo softwareupdate -i -a
