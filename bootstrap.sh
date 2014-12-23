@@ -7,7 +7,7 @@ brew update
 # Install oh-my-zsh to beautify and manage zsh
 curl -L http://install.ohmyz.sh | sh
 
-install brew taps, needs to be fixed properly later
+# Install brew taps
 while read in; do brew tap "$in"; done < Taps
 
 # Install brews
@@ -16,6 +16,7 @@ brew install $(cat Brewfile|grep -v "#")
 # Install casks
 brew cask install --appdir="/Applications" $(cat Caskfile|grep -v "#")
 
+# Install fonts
 fonts=(
   font-roboto
   font-open-sans
