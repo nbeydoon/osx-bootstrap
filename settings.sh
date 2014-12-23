@@ -73,7 +73,7 @@ chflags nohidden ~/Library
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder AppleShowAllFiles -bool false
 
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true

@@ -1,2 +1,5 @@
 ## brew cask and more versions of casks
 caskroom/versions
+caskroom/fonts
+homebrew/dupes
+josegonzalez/homebrew-php
