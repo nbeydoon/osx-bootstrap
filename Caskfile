@@ -2,6 +2,7 @@
 
 # Web
 google-chrome
+twitter
 # Terminal
 iterm2
 
@@ -23,6 +24,9 @@ macdown
 sequel-pro
 # Documentation
 dash
+
+## Design
+sketch
 
 ## Desktop
 # QuickLook plugins
