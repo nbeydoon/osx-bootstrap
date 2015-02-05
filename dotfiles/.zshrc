@@ -26,4 +26,5 @@ export DOCKER_HOST=tcp://127.0.0.1:2375
 
 alias hosts='subl /etc/hosts'
 alias hs='homestead'
-
+alias casks="subl ~/Developer/osx-bootstrap/Caskfile"
+alias brews="subl ~/Developer/osx-bootstrap/Brewfile"
