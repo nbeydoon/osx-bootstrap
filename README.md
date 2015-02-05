@@ -1,8 +1,6 @@
 osx-bootstrap
 =============
 
-*Confirmed working on OSX Yosemite beta*
-
 Bootstrap for new OSX installs
 
 These files will install a bunch of great tools on your newly installed Mac. If it's not a brand new install of OSX you'll most probably be able to use these anyway :)
