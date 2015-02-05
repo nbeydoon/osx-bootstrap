@@ -19,8 +19,8 @@ link() {
   ln -s "$from" "$to"
 }
 
-for location in $dotfiles/.zshrc ; do
+for location in $(find $dotfiles/ -name '.*'); do
   file="${location##*/}"
   file="${file%.sh}"
-  link "$location" "$HOME/$file"
+  link "$dotfiles/$location" "$HOME/$file"
 done

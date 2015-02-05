@@ -6,11 +6,18 @@ git
 git-flow
 wget
 tmux
-nvm
 python
+
+#Node
+nvm
+npm
+
+#PHP
 php56
 php56-mcrypt
 composer
+
+#Locahost tunnel
 ngrok
 
 ## brew cask and more versions of casks

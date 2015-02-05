@@ -3,13 +3,13 @@
 # Web
 google-chrome
 twitter
+utorrent
 # Terminal
 iterm2
 
 ## Boxes
 # Virtualization
 vagrant
-vagrant-manager
 virtualbox
 # Containers
 boot2docker
