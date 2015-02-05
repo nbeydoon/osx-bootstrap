@@ -5,15 +5,27 @@ Bootstrap for new OSX installs
 
 These files will install a bunch of great tools on your newly installed Mac. If it's not a brand new install of OSX you'll most probably be able to use these anyway :)
 
+## Quick Start 
+
+(**Not recommended:** Still customized to ifox' environment)
+
 Run the following command to do a proper install of Homebrew, cask, oh-my-zsh, and a bunch of great tools and apps:
 
 ```
 curl --silent https://raw.githubusercontent.com/ifox/osx-bootstrap/master/install.sh | sh
 ```
 
-If you don't want all the apps I use, make sure fork this and edit the Brewfile and Caskfile to your liking.
+## Customize Install
 
-Enjoy!
+Names and directories are hardcoded into this project right now, so it makes more sense to take a few steps before leveraging this tool. To make it yours be sure to: 
+
+* `git clone https://github.com/ifox/osx-bootstrap.git` to get these files locally
+* Edit `settings.sh` and name your computer 
+* Edit `symlink-dotfiles.sh` and define your `$dev` directory
+* Review and customize the apps installed from Brewfile & Caskfile
+
+When you're all set, run `bash bootstrap.sh` to let the games begin!
+
 
 ## Requirements
 

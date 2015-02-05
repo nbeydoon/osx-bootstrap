@@ -9,8 +9,7 @@ tmux
 python
 
 #Node
-nvm
-npm
+node
 
 #PHP
 php56
