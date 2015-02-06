@@ -6,10 +6,10 @@
 # General
 # =======
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "foxmacpro"
-sudo scutil --set HostName "foxmacpro"
-sudo scutil --set LocalHostName "foxmacpro"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "foxmacpro"
+sudo scutil --set ComputerName "nourmac"
+sudo scutil --set HostName "nourmac"
+sudo scutil --set LocalHostName "nourmac"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "nourmac"
 
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
@@ -22,7 +22,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # ======
 
 # Save screenshots to the downlaods.
-defaults write com.apple.screencapture location "$HOME/Downloads/"
+defaults write com.apple.screencapture location "$HOME/Pictures/screenshot"
 
 
 # Trackpad

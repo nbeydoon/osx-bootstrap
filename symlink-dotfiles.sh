@@ -1,7 +1,7 @@
 #!/bin/bash
 # Most of this is from https://github.com/paulmillr/dotfiles/blob/master/symlink-dotfiles.sh
 
-dev="$HOME/Developer"
+dev="$HOME/Perso"
 dotfiles="$dev/osx-bootstrap/dotfiles"
 
 if [[ -d "$dotfiles" ]]; then

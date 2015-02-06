@@ -1,7 +1,7 @@
 ## Install a ton of great apps using Homebrew cask instead of downloading, clicking and manually installing :)
 
 # Web
-google-chrome
+# google-chrome
 twitter
 utorrent
 # Terminal
@@ -16,10 +16,10 @@ boot2docker
 
 ## Coding
 # Text editing
-sublime-text3
-atom
+# sublime-text3
+# atom
 # Markdown
-macdown
+# macdown
 # Database
 sequel-pro
 # Documentation
@@ -32,8 +32,8 @@ sketch
 # QuickLook plugins
 qlcolorcode qlstephen qlmarkdown quicklook-json betterzipql suspicious-package
 # Window management
-spectacle
-rightzoom
+# spectacle
+# rightzoom
 
 ## Media
 # Video player
@@ -49,7 +49,7 @@ licecap
 # Note taking
 nvalt
 # Collaboration
-slack
+# slack
 
 ## Storage
 # Online storage
@@ -58,4 +58,3 @@ google-drive
 infinit
 # Compression
 keka
-
